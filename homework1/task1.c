@@ -1,3 +1,24 @@
+/**
+ * @brief Implements the generateRandomText function
+ * 
+ * Write a function generateRandomText that takes the following parameters:
+ * - Two lists of words (referred to as A and B)
+ * - An expression C, which is a string with the following format:
+ *   "<A><A><B><A><B><A><B><B>"
+ *   "<B><A><A><A><B><A>"
+ *   ... (other similar formats)
+ * - A char** variable where the result should be stored
+ * - Two int variables indicating the sizes of the two word lists
+ * 
+ * The function should generate a C string based on the given expression.
+ * Each element in the expression (<A> or <B>) should be replaced with 
+ * a randomly selected word from the corresponding list.
+ * Write a main function that creates two word lists, calls generateRandomText,
+ * and prints the generated result to the console.
+ * 
+ * For randomization, use the rand() function from the #include <stdlib.h> library.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

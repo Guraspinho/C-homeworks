@@ -1,3 +1,24 @@
+/**
+ * @brief Implements a function to represent a book in memory
+ * 
+ * Write a function that represents a book with the following parameters:
+ * - Book title
+ * - Author's first name
+ * - Author's last name 
+ * - Number of pages
+ * - A pointer to memory where the result should be stored
+ *
+ * The book representation should follow this format:
+ * - First byte: first letter of author's first name
+ * - Second byte: first letter of author's last name
+ * - Third and fourth bytes: number of pages as a short
+ * - Remaining bytes: pointer to the book's C string title
+ *
+ * The output format should be:
+ * Author: X.Y.; Book: [Title]; Number of pages: [N];
+ * Where X and Y are the author's initials
+ */
+
 #include <stdio.h>
 
 int* representBook(char bookTitle[], char authorName[], char authorSurname[], short pages, int* resultPtr)
